@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", serif;
+    background-image:url(img/sideCubby_unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 130px;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px auto;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sidepanel {
+    min-width: 300px;
+    padding: 15px;
+    background-color: #ddd;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1347px;
+}
+
+.sidepanel img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.contact {
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.contact a {
+    padding: 5px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px 20px;
+}
+
+.mainpanel {
+    flex: 2;
+    min-width: 300px;
+    padding: 15px;
+}
+.short-facts {
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+
+
+p#about {
+    max-width: 500px;
+    line-height: 1.3em;
+    text-align: center;
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
+}
