@@ -19,28 +19,29 @@
 ## DB tables
 
 ### User
--id
--username
--displayName
--email
--yarnStash[]
--projectList[]
+- id
+- username
+- displayName
+- email
+- yarnStash[]
+- projectList[]
+- blogPosts[]
 
 ### Yarn
--id
--name
--dateAdded
--datePurchased
--colourName
--colorNumber
--batchID
--vendor
--price
--skeinWeight
--numberOfSkeins
--yarnWrapsPerCM
--yarnWeight
--projectUsed
+- id
+- name
+- dateAdded
+- datePurchased
+- colourName
+- colorNumber
+- batchID
+- vendor
+- price
+- skeinWeight
+- numberOfSkeins
+- yarnWrapsPerCM
+- yarnWeight
+- projectUsed
 
 ### Project
 - id
