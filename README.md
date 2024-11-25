@@ -22,6 +22,7 @@ A website where users can track the weaving yarns in their stash, and assign the
 ### User
 - id
 - username
+- password
 - displayName
 - email
 - yarnStash[]
@@ -38,11 +39,14 @@ A website where users can track the weaving yarns in their stash, and assign the
 - batchID
 - vendor
 - price
-- skeinWeight
-- numberOfSkeins
+- skeinWeight (gram)
+- skeinLength (meter)
+- numberOfSkeins 
 - yarnWrapsPerCM
 - yarnWeight
 - projectUsed
+- photos[] =>
+- yarnWeight (=ie NM)
 
 ### Project
 - id
@@ -51,6 +55,7 @@ A website where users can track the weaving yarns in their stash, and assign the
 - calculationVariables // needs detailing
 - description
 - ? Blog posts about project ?
+- photos[] =>
 
 ### Blog Posts
 - id
@@ -59,3 +64,11 @@ A website where users can track the weaving yarns in their stash, and assign the
 - lastUpdate[]
 - associatedPRoject
 - textEntry
+
+photos []
+- id
+- userOwner
+- dateAdded
+- yarnID
+- projectID
+- blogID
