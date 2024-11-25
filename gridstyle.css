@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", serif;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px auto;
+    text-align: center;
+}
+
+footer {
+    text-align:center;
+    font-size:x-small;
+    padding: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* container
+    - aside.sidepanel
+    - main.mainpanel
+        - p about
+        - section.yarnStash
+*/
+
+.container {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+}
+.sidepanel {
+    width: 250px;
+    border: 1px dotted gray;
+    margin-right: 5px;
+}
+.mainpanel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    min-width: 80vw;
+
+}
+section {
+    background-color: rgb(189, 189, 128);
+    min-height: 20vh;
+}
+.yarn1 { grid-area: 1 / 1 / 2 / 2; }
+.yarn2 { grid-area: 1 / 2 / 2 / 3; }
+.yarn3 { grid-area: 1 / 3 / 2 / 4; }
+.yarn4 { grid-area: 1 / 4 / 2 / 5; }
+.yarn5 { grid-area: 2 / 1 / 3 / 2; }
+.yarn6 { grid-area: 2 / 2 / 3 / 3; }
+.yarn7 { grid-area: 2 / 3 / 3 / 4; }
+.yarn8 { grid-area: 2 / 4 / 3 / 5; }
+.project1 { grid-area: 3 / 1 / 5 / 3; }
+.project2 { grid-area: 3 / 3 / 5 / 5; }
+
+#sideMenu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 2em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
+}
